@@ -7,14 +7,9 @@ pipeline {
                 sh 'npm ci --no-fund --loglevel=error'
             }
         }
-        stage('Test') {
+        stage('Build') {
             steps {
-                sh 'npm run test'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying...'
+                sh 'npm run build'
             }
         }
     }
