@@ -2,9 +2,9 @@ pipeline {
     agent { dockerfile true }
 
     stages {
-        stage('Build') {
+        stage('Install') {
             steps {
-                echo 'Building...'
+                sh 'npm ci --no-fund --loglevel=error'
             }
         }
         stage('Test') {
