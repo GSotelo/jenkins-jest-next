@@ -1,3 +1,5 @@
+// import Image from 'next/image'
+
 const people = [
   {
     name: 'Leslie Alexander',
@@ -48,7 +50,7 @@ const people = [
   // More people...
 ]
 
-export default function Example() {
+export default function UserProfile() {
   return (
     <div className="bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
